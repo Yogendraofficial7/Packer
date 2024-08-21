@@ -68,7 +68,7 @@ source "virtualbox-iso" "ubuntu-22043-live-server" {
   ssh_timeout             = "45m"
   vboxmanage              = [["modifyvm", "{{ .Name }}", "--memory", "${var.memory_amount}"]]
   virtualbox_version_file = ".vbox_version"
-  vm_name                 = "ubuntu-jammy"
+  vm_name                 = "YOGI-SERVER"
   headless                = "${var.headless_build}"
 }
 build {
